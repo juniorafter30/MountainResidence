@@ -6,8 +6,97 @@
   box-sizing: border-box;
 }
 
-body {
-  background: url(/images/landingpage.jpg);
+html {
+  font-size: 62.5%;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+/* Navbar styling */
+header {
+  background: #5e5fc2;
+}
+nav {
+  width: 80%;
+  margin: auto;
+  min-height: 10vh;
+
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav h1 {
+  font-size: 3rem;
+  font-family: "Potta One", cursive;
+}
+
+nav li {
+  list-style: none;
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*Landing section stylings */
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  background-image: url(/images/landing.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.landing h2 {
+  font-size: 3rem;
+  color: white;
+}
+
+/* Book place */
+
+#book {
+  min-height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0074cd;
+  color: white;
+}
+
+#book button {
+  margin: 2rem;
+  background: #009678;
+  border: 1px solid white;
+  padding: 0.5rem 3rem;
+  cursor: pointer;
+  font-family: "Potta One", sans-serif;
+}
+#book button:hover {
+  background: rgb(51, 44, 44);
+  color: white;
+  transition: all 0.5s ease;
+}
+
+/* Clouds section */
+
+#clouds {
+  min-height: 100vh;
+  background-image: url(/images/hero.jpg);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
